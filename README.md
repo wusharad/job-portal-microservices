@@ -83,6 +83,46 @@ Implemented via `JWT`. Authenticated users receive a token which is passed in th
 ## 📦 Running the Project (via Docker Compose)
 
 ```bash
-git clone https://github.com/yourname/job-portal-microservices.git
+git clone https://github.com/wusharad/job-portal-microservices.git
 cd job-portal-microservices
 docker-compose up --build
+```
+---
+
+## 📚 API Documentation
+
+Each service exposes Swagger UI at:  
+- `http://localhost:8081/swagger-ui.html` → User Service  
+- `http://localhost:8082/swagger-ui.html` → Job Service  
+- `http://localhost:8083/swagger-ui.html` → Notification Service  
+
+---
+
+## 📸 Architecture Diagram
+
+![Architecture](./docs/architecture-diagram.png)
+
+---
+
+## ✅ Features
+
+- Microservices with service discovery & routing
+- Secure APIs using JWT
+- Inter-service communication using REST and Kafka
+- Swagger documentation
+- CI/CD with GitHub Actions
+
+---
+
+## 💡 Future Enhancements
+
+- Add Admin dashboard
+- Redis Caching layer
+- CI/CD with staging server deployment
+
+---
+
+## 📜 License
+
+Apache License 2.0
+

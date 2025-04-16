@@ -76,7 +76,7 @@ job-portal-microservices/
 │
 └── docs/                            # Diagrams, API docs, Postman collections
     └── architecture-diagram.png
-
+```
 
 ---
 

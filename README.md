@@ -107,7 +107,7 @@ Each service exposes Swagger UI at:
 
 ## 📸 Architecture Diagram
 
-![Architecture](./docs/architecture-diagram.png)
+![Architecture](./docs/project-architecture-diagram.png)
 
 ---
 

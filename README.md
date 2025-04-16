@@ -32,43 +32,50 @@ This is a production-grade backend system for a Job Portal, built using Spring B
 ---
 
 ## 📁 Project Structure
+```text
 job-portal-microservices/
+│
 ├── README.md
-├── docker-compose.yml
-├── .github/
-│   └── workflows/
-│       └── ci.yml
-├── config-server/
+├── docker-compose.yml                # Orchestrates all services
+├── .github/workflows/ci.yml         # GitHub Actions for CI/CD
+│
+├── config-server/                   # Central config service
 │   ├── src/
 │   └── application.yml
-├── api-gateway/
+│
+├── api-gateway/                     # Entry point to system
 │   ├── src/
 │   └── application.yml
-├── discovery-server/
+│
+├── discovery-server/                # Eureka server
 │   ├── src/
 │   └── application.yml
-├── user-service/
-│   ├── src/
-│   ├── Dockerfile
-│   └── application.yml
-├── job-service/
+│
+├── user-service/                    # Handles registration/login
 │   ├── src/
 │   ├── Dockerfile
 │   └── application.yml
-├── notification-service/
+│
+├── job-service/                     # Manage jobs (create/list/apply)
 │   ├── src/
 │   ├── Dockerfile
 │   └── application.yml
-├── config-repo/
+│
+├── notification-service/           # Email/SMS on job apply
+│   ├── src/
+│   ├── Dockerfile
+│   └── application.yml
+│
+├── config-repo/                     # Git-backed configs (for config-server)
 │   ├── user-service.yml
 │   ├── job-service.yml
-│   ├── notification-service.yml
-│   └── api-gateway.yml
-├── scripts/
+│   └── notification-service.yml
+│
+├── scripts/                         # DB scripts, init Kafka, etc.
 │   └── init-db.sql
-└── docs/
+│
+└── docs/                            # Diagrams, API docs, Postman collections
     └── architecture-diagram.png
-
 
 
 ---
